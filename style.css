@@ -1,3 +1,12 @@
-body {
-    background-color: black;
+/*colors: 
+Sort #000000 
+Mørkegrå: #2F2E2E
+Lysegrå: #EBF1EE
+Mørkegrøn: #94A61E
+Lysegrøn: #DEFF08
+*/ 
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
