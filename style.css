@@ -6,7 +6,307 @@ Mørkegrøn: #94A61E
 Lysegrøn: #DEFF08
 */ 
 
+
+/* GENERELT*/
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
 }
+
+body {
+    width: 100%;
+    background-color: black;
+    overflow-x: hidden;
+
+}
+
+a { 
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none; 
+}
+  
+
+
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #DEFF08;
+    margin: 0;
+}
+
+h2 {
+    color: #94A61E;
+    font-size: 3vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3 {
+    color: #94A61E;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+
+h5 {
+    color: #94A61E;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 6vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+#logo {
+    width: 27vw ;
+    margin-left: 2vw;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    padding-top: 3vw;
+    padding-left: 4vw;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #94A61E;
+    font-size: 1.5vw;
+}
+
+/* FORSIDE*/
+
+#intro-forside {
+    background-image:  url(images/mtb_skoven_groencykel.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 65vw;
+}
+
+.transparent-box {
+    background-color: black;
+    opacity: 0.8;
+    width: 49%;
+    padding: 3vw;
+    position: relative;
+    top: 30vw;
+    left: 2vw;
+}
+
+.gradient-black {
+    height: 22vw;
+    background: linear-gradient(transparent, black);
+    position: relative;
+    top: 23vw;
+}
+
+
+/*CYKEL SEKTION _ FORSIDE*/
+
+#MTB-intro {
+    background-color: #EBF1EE;
+    border: 5px solid #DEFF08;
+    width: 60%;
+    position: relative;
+    top: 5vw;
+    left: 10vw;
+    padding-bottom: 7vw;
+}
+
+#MTB-intro h1 {
+    -webkit-text-stroke-color: #94A61E;
+    transform-origin: 0 0 ;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 35vw;
+}
+
+#bike-pushed-right {
+    position: relative;
+    top: 0;
+    left: 2vw;
+    width: 145%;
+}
+
+#MTB-intro p {
+    margin: 7vw;
+}
+
+.knap h5 {
+    border: 3px solid #94A61E;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    margin: auto;
+}
+
+
+#jumping-mtb {
+    height: 30vw;
+    background-image: url(images/jumping-mtb.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10vw;
+}
+
+#jumping-mtb .gradient-black {
+    top: 0;
+    transform: rotate(180deg);
+    height: 10vw;
+}
+
+.gradient-grey {
+    height: 10vw;
+    background: linear-gradient(transparent, #2F2E2E);
+    position: relative;
+    top: 10vw;
+    
+}
+
+
+/* INFOBOX - HVORFOR MTB?*/
+
+#infobox {
+    height: 62vw;
+    background-color: #2F2E2E;
+    
+}
+
+#infobox h1 {
+    text-align: center;
+    padding-top: 5vw;
+    margin-bottom: 5vw;
+}
+#to-kolonner {
+    display: flex;
+    padding-left: 20vw;
+}
+
+
+#infobox ul li {
+    font-size: 1.3vw;
+    color: #EBF1EE;
+}
+
+#infobox ul li::before {
+    content: "\2022";  
+    color: #DEFF08;
+    font-size: 2.5vw;
+    font-weight: bolder; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+    margin-top: 0,5em;
+}
+
+#tandhjul {
+    width: 55%;
+    position: relative;
+    left: 16vw;
+}
+
+
+/* SEKTION OM APP*/
+
+#app-section {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#app-section h1 {
+    -webkit-text-stroke-color: #94A61E;
+    transform-origin: 0 0 ;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 50vw;
+    width: 20%;
+
+}
+
+.lightgrey-container {
+    background-color: #EBF1EE;
+    border: 5px solid #DEFF08;
+    height: 40vw;
+    width: 65%;
+    margin-top: 15vw;
+    margin-bottom: 10vw;
+    margin-left: 8vw;
+    display: flex;
+}
+
+#app-image {
+    width: 50%;
+}
+#app-text {
+    width: 80%;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+
+#app-text h3 {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+#app-image, #app-text {
+    position: relative;
+    left: -8vw;
+    top: 2vw;
+}
+
+#app-text .knap h5{
+    width: 70%;
+}
+
+/*FOOTER*/
+
+
+footer {
+    background-color: #2F2E2E;
+    display: flex;
+    padding: 10vw;
+    width: 100%;
+}
+footer div {
+    width: 25%;
+}
+
+footer li, footer h3, footer a {
+    color: #707070;
+}
+
+
+
+
+
+
 
