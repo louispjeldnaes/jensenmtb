@@ -41,7 +41,7 @@ h1 {
     font-size: 5vw;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #DEFF08;
     margin: 0;
 }
@@ -196,8 +196,9 @@ nav a {
 /* INFOBOX - HVORFOR MTB?*/
 
 #infobox {
-    height: 62vw;
+   
     background-color: #2F2E2E;
+    padding-bottom: 10vw;
     
 }
 
@@ -213,8 +214,9 @@ nav a {
 
 
 #infobox ul li {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: #EBF1EE;
+    font-weight: 300;
 }
 
 #infobox ul li::before {
@@ -233,6 +235,10 @@ nav a {
     position: relative;
     left: 16vw;
 }
+
+
+
+
 
 
 /* SEKTION OM APP*/
@@ -311,6 +317,7 @@ footer h3 {
 
 footer li, footer h3, footer a {
     color: #707070;
+    font-size: 1.5vw;
 }
 
 
@@ -328,6 +335,13 @@ footer li, footer h3, footer a {
         -webkit-text-stroke-width: 1px;
     }
 
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 3.2vw;
+    }
     /*HEADER MOBIL*/
 
     header {
@@ -363,12 +377,9 @@ footer li, footer h3, footer a {
     }
 
     .gradient-black {
-        top: 29vw;
+        top: 30vw;
     }
 
-    #intro-forside h3 {
-        font-size: 3.2vw;
-    }
 
     /*CYKEL-SEKTION - FORSIDE*/
 
@@ -403,11 +414,83 @@ footer li, footer h3, footer a {
         top: 20vw;
     }
 
-    /* INFOBOX - HVORFOR MTB?*/
 
+    /* INFOBOX - HVORFOR MTB?*/
+    
     #infobox ul li {
         font-size: 3vw;
     }
+
+    #infobox ul li::before {
+        font-size: 5vw;
+    }
+
+    #to-kolonner {
+        padding-left: 15vw;
+    }
+    #infobox .knap h5{
+        width: 40%;
+        margin-top: 10vw;
+    }
+
+    #tandhjul {
+        width: 75%;
+        position: relative;
+        top: 75vw;
+    }
+
+    /* SEKTION OM APP*/
+
+    #app-section {
+        display: block;
+    
+    }
+
+    #app-section h1 {
+        transform: rotate(0deg);
+        top: 0;
+        width: 100%;
+        font-size: 8vw;
+        margin-top: 10vw;
+    }
+    
+    .lightgrey-container {
+        height: auto;
+        width: 90%;
+        padding-bottom: 10vw;
+        margin-top: 10vw;
+    }
+
+    #app-image {
+        width: 80%;
+        position: relative;
+        top: 10vw;
+    }
+
+    #app-text {
+        width: 90%;
+        margin-top: 10vw;
+        margin-left: 2vw;
+    }
+    #app-text .knap h5{
+        width: 90%;
+    }
+
+    /*FOOTER*/
+    footer {
+        flex-wrap: wrap;
+        padding: 5vw 0vw 20vw 14vw;
+    }
+
+    footer div {
+        width: 45%;
+        margin-top: 10vw;
+    }
+
+    footer li, footer h3, footer a {
+        font-size: 2.5vw;
+    }
+
 }
 
 
