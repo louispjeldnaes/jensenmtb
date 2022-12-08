@@ -5,7 +5,8 @@ Lysegrå: #EBF1EE
 Mørkegrøn: #94A61E
 Lysegrøn: #DEFF08
 */ 
-
+/*PÅ DETTE STYLESHEET FINDES CSS (HERUNDER MEDIAQUERIES) 
+TIL ALT GENERELT OG FORSIDEN*/
 
 /* GENERELT*/
 
@@ -293,11 +294,19 @@ nav a {
 footer {
     background-color: #2F2E2E;
     display: flex;
-    padding: 10vw;
+    justify-content: center;
+    padding: 8vw ;
+    padding-left: 14vw;
     width: 100%;
+
 }
 footer div {
     width: 25%;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    margin-bottom: 1vw;
 }
 
 footer li, footer h3, footer a {
@@ -306,7 +315,106 @@ footer li, footer h3, footer a {
 
 
 
+/*MEDIA QUERIES*/
+
+/*MOBIL*/ 
+
+@media screen and (max-width: 768px){ 
+
+    /*GENERELT*/
+
+    h1 {
+        font-size: 9vw;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    /*HEADER MOBIL*/
+
+    header {
+        height: 9vw;
+    }
+
+    nav a {
+        font-size: 2.5vw;
+    }
+
+    nav {
+        width: 75% ;
+        padding-top: 4vw;
+    }
+
+    #logo {
+        width: 49vw;
+        margin-left: 0;
+    }
+
+    /*INTROBILLEDE FORSIDE MOBIL*/
+
+    #intro-forside {
+     
+       height: 110vw;
+       background-position: left;
+    }
+
+    .transparent-box {
+        width: 60%;
+        top: 35vw;
+        left: 5vw;
+    }
+
+    .gradient-black {
+        top: 29vw;
+    }
+
+    #intro-forside h3 {
+        font-size: 3.2vw;
+    }
+
+    /*CYKEL-SEKTION - FORSIDE*/
+
+    #MTB-intro {
+        left: 6vw;
+        width: 70%;
+        border: 3px solid #DEFF08;
+    }
+
+    #bike-pushed-right {
+        left: 7vw;
+        width: 125%;
+        top: -5vw;
+    }
+
+    #MTB-intro h1 {
+        top: 63vw;
+    }
+
+    .knap h5 {
+        border: 2px solid #94A61E;
+        font-size: 2vw ;
+        width: 50%;
+    }
+
+        
+    #jumping-mtb { /*Billede med 'hoppende' MTB*/
+        height: 40vw;
+    }
+
+    .gradient-grey {
+        top: 20vw;
+    }
+
+    /* INFOBOX - HVORFOR MTB?*/
+
+    #infobox ul li {
+        font-size: 3vw;
+    }
+}
 
 
+/*LAPTOP*/
+
+@media screen and (min-width: 768px){ 
 
 
+    
+}
