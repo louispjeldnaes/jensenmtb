@@ -1,0 +1,126 @@
+#intro-voresmodeller {
+    background-image:  url(images/bike-on-rock.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 45vw;
+}
+
+#intro-voresmodeller .transparent-box {
+    background-color: black;
+    opacity: 0.8;
+    width: 55%;
+    padding: 3vw;
+    position: relative;
+    top: 15vw;
+    left: 2vw;
+}
+
+#intro-voresmodeller .gradient-black {
+    height: 22vw;
+    background: linear-gradient(transparent, black);
+    position: relative;
+    top: 5vw;
+}
+
+
+
+
+.carousel {
+    position: relative;
+    width: 80vw;
+    height: 110vw;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel .item {
+    position: absolute;
+    width: 80vw;
+    height: 110vw;
+    text-align: center;
+}
+
+/* animations */
+
+/* SKABER SLIDE EFFEKTEN
+
+.carousel .slide-in {
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+    transform: translate3d(-100%, 0px, 0px);
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    z-index: 1;
+}
+*/
+
+/*PLACERER DET AKTUELLE OG DET ØNSKEDE KORT?????*/
+.carousel .slide-in:target,
+.carousel .slide-in:focus {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 2;
+}
+
+/*.carousel .slide-in:target ~ .slide-in {
+    -webkit-transform: translate3d(100%, 0px, 0px);
+    transform: translate3d(100%, 0px, 0px);
+}*/
+
+.carousel .controls {
+    position: relative;
+    top: 0;
+    right: 15vw;
+    width: 100%;
+    text-align: center;
+    z-index: 90;
+}
+
+.carousel .controls .btn {
+    color: #94A61E;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+/* KORT MED MODELLER */
+
+.item {
+    background-color: #EBF1EE;
+    border: 5px solid #DEFF08;
+}
+
+.item h1 {
+    -webkit-text-stroke-color: #94A61E;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 36vw;
+    top: 17vw;
+}
+
+.bikemodel {
+    margin-left: 5vw;
+}
+
+.closeup-images {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.closeup-images div {
+    width: 25%;
+
+}
+
+.carousel-text {
+    display: flex;
+    text-align: left;
+    margin: 10vw;
+    justify-content: space-around;
+}
+
+.carousel-text p {
+    width: 50%;
+}
+
+
