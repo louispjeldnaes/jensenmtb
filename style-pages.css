@@ -28,12 +28,14 @@
 
 /*4 KORT OVER MODELLER - CAROUSEL*/
 
+/*Inspiration til udførelse af denne løsning på https://speckyboy.com/open-source-carousel-sliders-css/ */
+
 
 .carousel-wrapper{
-  height:100vw;
+  height:105vw;
   position:relative;
   width:80vw;
-  margin:0 auto;
+  margin: auto;
 }
 .carousel-item{
   position:absolute;
@@ -41,16 +43,14 @@
   bottom:0;
   left:0;
   right:0;
-  padding:25px 50px;
   opacity:0;
   transition: all 0.5s ease-in-out;
   background-color: #EBF1EE;
   border: 5px solid #DEFF08;
 }
 
-/* KORT MED MODELLER */
 
-
+/* INDHOLD TIL 4 KORT MED FORSKELLIGE MODELLER */
 .carousel-item h1 {
     -webkit-text-stroke-color: #94A61E;
     -webkit-text-stroke-width: 2px;
@@ -88,35 +88,45 @@
     width: 60%;
 }
 
+.carousel-item .knap h5 {
+    width: 30%;
+   margin-bottom: 10vw; 
+}
+
+
+/*GRØNNE KASSER DER MARKERER SPECIFIKATIONER I TABEL*/
+
 #floating-green-box1, #floating-green-box2, #floating-green-box3, #floating-green-box4 {
     height: 53vw;
     background-color:rgba(222, 255, 8, 0.3);
     border: 5px solid #DEFF08;
-    position: relative;
-    top: 27.7vw;
-    left: 2.5vw;
+    position: absolute;
+    top: 124.6vw;
+    left: 6.5vw;
     width: 21vw;
 }
 
 #floating-green-box2 {
     
-    left: 23vw;
+    left: 27.3vw;
     width: 16.7vw;
 }
 
 #floating-green-box3 {
    
-    left: 39.5vw;
-    width: 17vw;
+    left: 43.8vw;
+    width: 17.1vw;
 }
 
 #floating-green-box4 {
    
-    left: 56.2vw;
+    left: 60.5vw;
     width: 19.5vw;
 }
 
-/*PILE UDSEENDE*/
+
+
+/*PILE - UDSEENDE*/
 
 .arrow{
   border: solid #DEFF08;
@@ -125,50 +135,58 @@
     padding: 12px;
 }
 
+/*Pile - placering*/
+
 .arrow-prev{
-  left:-30px;
+  left:-50px;
   position:absolute;
   top:50%;
   transform:translateY(-50%) rotate(135deg);
 }
  
 .arrow-next{
-    right:-30px;
+    right:-50px;
   position:absolute;
   top:50%;
   transform:translateY(-50%) rotate(-45deg);
   }
 
+  /*Pile ved specifikation-sektionen*/
+#arrowprev-specs {
+    left:-50px;
+  position:absolute;
+  top:147%;
+  transform:translateY(-50%) rotate(135deg);
+}
 
-  .light{
-    color:white;
-  }
+#arrownext-specs {
+    right:-50px;
+  position:absolute;
+  top:147%;
+  transform:translateY(-50%) rotate(-45deg);
+}
 
-@media (max-width: 480px) {
-      .arrow, .light .arrow {
-        background-size: 10px;
-        background-position: 10px 50%;
-      }
-    }
 
-/*Select every element*/
-[id^="item"] {
+/*KONTROL OVER KORTENES SYNLIGHED*/
+
+[id^="item"] { /*Gør at kortene ikke flyver helt op i toppen af browseren*/
     display: none;
   }
 
-  .item-1 {
+.item-1 { /*Har et z-index der gør at den lægger sig foran de andre som default - indtil et andet item er valgt*/
     z-index: 2;
     opacity: 1;
-  }
+}
 
-*:target ~ .item-1 {
+*:target ~ .item-1 { /*Når item-1 ikke er valgt så kan item-1 ikke ses????*/
     opacity: 0;
   }
 
-#item-1:target ~ .item-1 {
+#item-1:target ~ .item-1 { /*Når item-1 er 'valgt', kan den ses*/
     opacity: 1;
   }
 
+  /*Når andre items er valgt, bliver de synlige og får z-index der er højere end de andre, og er derfor den eneste der ses*/
 #item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
     z-index: 3;
     opacity: 1;
@@ -192,6 +210,11 @@
     margin-bottom: 5vw;
 }
 
+#tabel {
+    width: 80vw;
+    margin: auto;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -213,5 +236,123 @@ table {
     margin: auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
+  }
+
+
+  /*MEDIA QUERIES*/
+
+  /*MOBIL*/ 
+
+@media screen and (max-width: 768px){ 
+
+
+    /*VORES MODELLER*/
+
+    /* INTRO TIL VORES MODELLER*/
+
+    #intro-voresmodeller {
+        height: 100vw;
+        margin-bottom: 10vw;
+    }
+
+    #intro-voresmodeller .gradient-black {
+        top: 32vw;
+    }
+
+    #intro-voresmodeller .transparent-box {
+        top: 27vw;
+        width: 85%;
+    }
+
+    /*4 KORT MED MODELLER*/
+
+    .carousel-wrapper {
+        height: 300vw;
+    }
+
+    .carousel-item h1 {
+        -webkit-text-stroke-width: 1px;
+        transform: rotate(0deg);
+        right: 0vw;
+        top: 0vw;
+        text-align: center;
+        width: 100%;
+    }
+    .bikemodel {
+        width: 100%;
+        margin-left: 0vw;
+
+    }
+    
+    .closeup-images {
+        flex-wrap: wrap;
+    }
+    .closeup-images div {
+        width: 45%;
+    }
+    #model-image-noshow {
+        display: none;
+    }
+
+    .carousel-text {
+        flex-wrap: wrap;
+    }
+
+    .carousel-text p {
+        width: 100%;
+        margin-bottom: 5vw;
+        text-align: center;
+        padding: 5vw;
+    }
+
+
+    .arrow-prev {
+        left: -30px;
+        top: 30%;
+    }
+    .arrow-next{
+        right: -30px;
+        top: 30%;
+    }
+
+    #arrowprev-specs {
+        left: -30px;
+        top: 80%;
+    }
+    #arrownext-specs {
+        right: -30px;
+        top: 80%;
+    }
+
+    #floating-green-box1, #floating-green-box2, #floating-green-box3, #floating-green-box4 {
+        display: none;
+    }
+
+    /*SPECIFIKATIONER -på mobil er de inde i den lysegrå kasse*/
+
+    #specifikationer h1 {
+        display: none;
+    }
+
+    #tabel {
+        display: none;
+    }
+  
+
+    .carousel-wrapper table {
+        width: 80%;
+        margin-bottom: 10vw;
+    }
+ 
+}
+
+  /*LAPTOP*/ 
+
+  @media screen and (min-width: 768px) {
+
+    .carousel-wrapper table {
+        display: none;
+    }
+
   }
 
