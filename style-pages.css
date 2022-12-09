@@ -1,4 +1,9 @@
-#intro-voresmodeller {
+
+
+/*-------------------------------VORES MODELLER---------------------------*/
+
+/*INTRO - VORES MODELLER*/
+.intro-pages {
     background-image:  url(images/bike-on-rock.jpg);
     background-size: cover;
     background-position: bottom;
@@ -6,7 +11,7 @@
     height: 45vw;
 }
 
-#intro-voresmodeller .transparent-box {
+.intro-pages .transparent-box {
     background-color: black;
     opacity: 0.8;
     width: 55%;
@@ -16,14 +21,12 @@
     left: 2vw;
 }
 
-#intro-voresmodeller .gradient-black {
+.intro-pages .gradient-black {
     height: 22vw;
     background: linear-gradient(transparent, black);
     position: relative;
     top: 5vw;
 }
-
-
 
 
 /*4 KORT OVER MODELLER - CAROUSEL*/
@@ -57,7 +60,9 @@
     transform: rotate(-90deg);
     position: relative;
     right: 36vw;
-    top: 3vw;
+    top: 38vw;
+    text-align: right;
+
 
 }
 
@@ -239,7 +244,135 @@ table {
   }
 
 
-  /*MEDIA QUERIES*/
+
+
+
+/*-----------------------MTB GUIDE------------------------*/
+
+/*Intro til mtb guide*/
+
+#intro-mtbguide {
+    background-image: url(images/mbttrip-in-forest.jpg);
+}
+
+/*VÆRD AT VIDE-sektion*/
+
+.to-kolonner-box {
+    background-color: #EBF1EE;
+    border: 5px solid #DEFF08;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 7vw;
+}
+
+.to-kolonner-box h1 {
+    -webkit-text-stroke-color: #94A61E;
+    -webkit-text-stroke-width: 2px;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 36vw;
+    top: 38vw;
+    text-align: right;
+}
+
+.to-kolonner-indhold {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+
+.to-kolonner-img {
+    width: 30%;
+}
+
+.to-kolonner-text {
+    width: 65%;
+}
+
+
+/*HUSKELISTE-SEKTION*/
+
+.liste {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.liste h1 {
+    text-align: center;
+}
+
+.liste-indhold {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 5vw;
+
+}
+
+.liste-indhold div {
+    width: 20%;
+}
+
+.liste-indhold p {
+    width: 70%;
+    color: #EBF1EE;
+}
+
+#bike-closeup-img {
+    background-image: url(images/bike-closeup.jpg);
+}
+
+
+
+/* -----------------------------------VORES APP---------------------------*/
+/*INTRO-SEKTION*/
+
+#intro-voresapp {
+    background-image: url(images/skov.jpg);
+}
+
+#appsite-info {
+    background-color: #EBF1EE;
+    border: 5px solid #DEFF08;
+    width: 60;
+    margin: 10vw 30% 10vw 10%;
+}
+
+#appsite-info h1 {
+    -webkit-text-stroke-color: #94A61E;
+    -webkit-text-stroke-width: 2px;
+    transform: rotate(-90deg);
+    position: relative;
+    right: 26vw;
+    top: 28vw;
+    text-align: right;
+}
+
+#appsite-indhold {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+#appsite-text {
+    width: 70%;
+}
+
+#appsite-img {
+    position: relative;
+    left: 15vw;
+    width: 170%;
+
+}
+
+
+
+
+
+  /*----------------------MEDIA QUERIES*------------------------/
 
   /*MOBIL*/ 
 
@@ -250,16 +383,16 @@ table {
 
     /* INTRO TIL VORES MODELLER*/
 
-    #intro-voresmodeller {
+    .intro-pages {
         height: 100vw;
         margin-bottom: 10vw;
     }
 
-    #intro-voresmodeller .gradient-black {
+    .intro-pages .gradient-black {
         top: 32vw;
     }
 
-    #intro-voresmodeller .transparent-box {
+    .intro-pages .transparent-box {
         top: 27vw;
         width: 85%;
     }
@@ -343,16 +476,31 @@ table {
         width: 80%;
         margin-bottom: 10vw;
     }
+
+
+    /*MTB GUIDE*/
+
+    .to-kolonner-indhold {
+        flex-wrap: wrap;
+    }
+
+    .to-kolonner-img {
+        width: 100%;
+    }
+
+    .to-kolonner-text {
+        width: 100%;
+    }
  
 }
 
   /*LAPTOP*/ 
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .carousel-wrapper table {
         display: none;
     }
 
-  }
+}
 

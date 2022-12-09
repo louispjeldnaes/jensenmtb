@@ -58,6 +58,11 @@ h3 {
     font-weight: 400;
 }
 
+h4 {
+    font-weight: 400;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
 
 h5 {
     color: #94A61E;
@@ -170,7 +175,7 @@ nav a {
 }
 
 
-#jumping-mtb {
+.gradient-img {
     height: 30vw;
     background-image: url(images/jumping-mtb.jpg);
     background-size: cover;
@@ -178,7 +183,7 @@ nav a {
     margin-top: 10vw;
 }
 
-#jumping-mtb .gradient-black {
+.gradient-img .gradient-black {
     top: 0;
     transform: rotate(180deg);
     height: 10vw;
