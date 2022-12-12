@@ -156,8 +156,103 @@ nav a {
     width: 145%;
 }
 
+
+/*Streger med tekst på laptopversion*/
+
+#line1 img {
+    width: 10vw;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 15vw;
+    left: 12vw;
+}
+
+#line1 {
+    position: absolute;
+    top: 0vw;
+    left: 5vw;
+}
+
+#line1 p {
+    color: #94A61E;
+    width: 35%;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+#line2 img {
+    width: 12vw;
+    position: absolute;
+    transform: rotate(10deg);
+    top: -10vw;
+    left: 18vw;
+}
+
+#line2 {
+    position: absolute;
+    top: 52vw;
+    left: -12vw;
+}
+
+#line2 p {
+    color: #94A61E;
+    width: 30%;
+    font-size: 1.5vw;
+}
+
+#line3 img {
+    width: 9vw;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 15vw;
+    left: 3vw;
+}
+
+#line3 {
+    position: absolute;
+    top: 10vw;
+    left: 60vw;
+}
+
+#line3 p {
+    color: #94A61E;
+    width: 80%;
+    font-size: 1.5vw;
+}
+
+
+
+
+#line4 img {
+    width: 10vw;
+    position: absolute;
+    transform: rotate(5deg);
+    top: 14vw;
+    left: 2vw;
+}
+
+#line4 {
+    position: absolute;
+    top: -7vw;
+    left: 55vw;
+}
+
+#line4 p {
+    color: #94A61E;
+    width: 90%;
+    font-size: 1.5vw;
+}
+
 #MTB-intro p {
     margin: 7vw;
+}
+
+
+#mtb-intro .knap h5 {
+    width: 50%;
 }
 
 .knap h5 {

@@ -297,10 +297,10 @@
 
 .liste-indhold {
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: auto;
-    justify-content: space-between;
-    margin-top: 5vw;
+    justify-content: center;
+    margin-top: 2vw;
 
 }
 
@@ -309,8 +309,9 @@
 }
 
 .liste-indhold p {
-    width: 70%;
+    width: 80%;
     color: #EBF1EE;
+    
 }
 
 #bike-closeup-img {
@@ -344,8 +345,14 @@
 }
 
 #appsite-info h3 {
-    margin-top: 5vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
 } 
+
+#appsite-info h2 {
+    margin-left: 2vw;
+}
+
 
 #appsite-indhold {
     width: 70%;
