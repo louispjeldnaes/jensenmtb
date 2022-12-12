@@ -329,8 +329,8 @@
 #appsite-info {
     background-color: #EBF1EE;
     border: 5px solid #DEFF08;
-    width: 60;
-    margin: 10vw 30% 10vw 10%;
+    width: 65%;
+    margin: 0vw 30% 10vw 10%;
 }
 
 #appsite-info h1 {
@@ -338,31 +338,75 @@
     -webkit-text-stroke-width: 2px;
     transform: rotate(-90deg);
     position: relative;
-    right: 26vw;
-    top: 28vw;
+    right: 28vw;
+    top: 30vw;
     text-align: right;
 }
 
+#appsite-info h3 {
+    margin-top: 5vw;
+} 
+
 #appsite-indhold {
-    width: 60%;
+    width: 70%;
     margin: auto;
     display: flex;
+    margin-bottom: 10vw;
 }
 
 #appsite-text {
-    width: 70%;
+    width: 100%;
 }
 
 #appsite-img {
-    position: relative;
-    left: 15vw;
-    width: 170%;
+    position: absolute;
+    left: 65vw;
+}
 
+#appsite-info ul {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 
+#appsite-info ul li {
+    font-size: 1.5vw;
+    color: black;
+    font-weight: 400;
+    width:75%;
+    margin: auto;
 
+}
 
+#appsite-info ul li::before {
+    content: "\2022";  
+    color: #94A61E;
+    font-size: 2.5vw;
+    font-weight: bolder; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+    margin-top: 0,5em;
+}
+
+#get-app {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+#get-app a {
+    width: 30%;
+}
+
+#appstore {
+    width: 100%;
+    margin-top: 0.6vw;
+}
+
+#googleplay {
+    width: 110% ;
+}
 
   /*----------------------MEDIA QUERIES*------------------------/
 
@@ -525,34 +569,6 @@
     #bike-closeup-img {
         background-image: url(images/bike-closeup-mobil.jpg)
     }
-
-    #tabletest {
-        width: 80%;
-        margin: auto;
-        background-color: #EBF1EE;
-        padding-top: 25vw;
-        padding-bottom: 25vw;
-
-    }
-
-    #tabletest table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 80%;
-        margin: auto;
-        margin-top: 10vw;
-
-      }
-      
-      td, th {
-        border: 1px solid black;
-        text-align: left;
-        padding: 8px;
-      }
-
-
-      
-
 
 }
   /*LAPTOP*/ 
