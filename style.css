@@ -308,7 +308,7 @@ nav a {
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
-    margin-top: 0,5em;
+    margin-top: 0.2em;
 }
 
 #tandhjul {
@@ -475,10 +475,11 @@ footer li, footer h3, footer a {
         border: 3px solid #DEFF08;
     }
 
-    #bike-pushed-right {
+    #bike-pushed-right-mobil {
         left: 7vw;
         width: 125%;
         top: -5vw;
+        position: relative;
     }
 
     #MTB-intro h1 {

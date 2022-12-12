@@ -21,12 +21,6 @@
     left: 2vw;
 }
 
-.intro-pages .gradient-black {
-    height: 22vw;
-    background: linear-gradient(transparent, black);
-    position: relative;
-    top: 5vw;
-}
 
 
 /*4 KORT OVER MODELLER - CAROUSEL*/
@@ -66,7 +60,7 @@
 
 }
 
-#bikemodel {
+.bikemodel {
     margin-left: 5vw;
 }
 
@@ -158,14 +152,14 @@
   }
 
   /*Pile ved specifikation-sektionen*/
-#arrowprev-specs {
+.arrowprev-specs {
     left:-50px;
   position:absolute;
   top:147%;
   transform:translateY(-50%) rotate(135deg);
 }
 
-#arrownext-specs {
+.arrownext-specs {
     right:-50px;
   position:absolute;
   top:147%;
@@ -275,7 +269,7 @@
     margin-bottom: 5vw;
 }
 
-#to-kolonner-img {
+.to-kolonner-img {
     width: 35%;
 }
 
@@ -393,7 +387,7 @@
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
-    margin-top: 0,5em;
+    margin-top: 0.5em;
 }
 
 #get-app {
@@ -432,10 +426,6 @@
     }
 
 
-    #intro-modeller .gradient-black{
-        top: 44vw;
-    }
-
     .intro-pages .transparent-box {
         top: 27vw;
         width: 85%;
@@ -455,7 +445,7 @@
         text-align: center;
         width: 100%;
     }
-    #bikemodel {
+    .bikemodel {
         width: 100%;
         margin-left: 0vw;
     }
@@ -466,7 +456,7 @@
     .closeup-images div {
         width: 45%;
     }
-    #model-image-noshow {
+    .model-image-noshow {
         display: none;
     }
 
@@ -496,11 +486,11 @@
         top: 30%;
     }
 
-    #arrowprev-specs {
+    .arrowprev-specs {
         left: -30px;
         top: 80%;
     }
-    #arrownext-specs {
+    .arrownext-specs {
         right: -30px;
         top: 80%;
     }
@@ -548,7 +538,7 @@
         flex-wrap: wrap;
     }
 
-    #to-kolonner-img {
+    .to-kolonner-img {
         width: 100%;
     }
 
