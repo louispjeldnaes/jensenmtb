@@ -358,7 +358,7 @@
     width: 100%;
 }
 
-#appsite-img {
+#appsite-img-laptop {
     position: absolute;
     left: 65vw;
 }
@@ -400,7 +400,6 @@
 }
 
 #appstore {
-    width: 100%;
     margin-top: 0.6vw;
 }
 
@@ -570,12 +569,55 @@
         background-image: url(images/bike-closeup-mobil.jpg)
     }
 
+    /*APP-SITE*/
+
+        #appsite-info {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10vw;
+        }
+
+        #intro-voresapp .transparent-box {
+            width: 65%;
+            top: 35vw;
+        }
+        #appsite-info h1 {
+            transform: rotate(0deg);
+            position: relative;
+            text-align: center;
+            top: 0;
+            right: 0;
+            margin-bottom: 5vw;
+            margin-top: 10vw;
+        }
+
+        #appsite-info ul li::before {
+            font-size: 5vw;
+        }
+
+        #appsite-info ul li {
+            font-size: 3vw;
+        }
+
+    
+        #get-app a {
+            width: 80%;
+        }
+
+        #appstore {
+            margin-top: 1vw;
+        }
+
+
 }
+
+
   /*LAPTOP*/ 
 
 @media screen and (min-width: 768px) {
     .table-img {
         display: none;
     }
+
 
 }
