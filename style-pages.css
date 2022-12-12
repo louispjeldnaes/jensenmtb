@@ -94,8 +94,9 @@
 }
 
 .carousel-item .knap h5 {
-    width: 30%;
+    width: 60%;
    margin-bottom: 10vw; 
+   margin-top: 10vw;
 }
 
 
@@ -220,20 +221,11 @@
     margin: auto;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80vw;
+.table-img { /*MOBIL-VERSIONEN - VISES IKKE PÅ LAPTOP*/
+    width: 80%;
     margin: auto;
-    background-color: #EBF1EE;
-  }
-  
-  td, th {
-    border: 1px solid black;
-    text-align: left;
-    padding: 8px;
-  }
-  
+}
+
   #specifikationer p {
     color: #EBF1EE;
     width: 50%;
@@ -386,10 +378,12 @@ table {
     .intro-pages {
         height: 100vw;
         margin-bottom: 10vw;
+        background-image: url(images/bike-on-rock-mobil.jpg);
     }
 
-    .intro-pages .gradient-black {
-        top: 32vw;
+
+    #intro-modeller .gradient-black{
+        top: 44vw;
     }
 
     .intro-pages .transparent-box {
@@ -400,7 +394,7 @@ table {
     /*4 KORT MED MODELLER*/
 
     .carousel-wrapper {
-        height: 300vw;
+        height: 345vw;
     }
 
     .carousel-item h1 {
@@ -411,7 +405,7 @@ table {
         text-align: center;
         width: 100%;
     }
-    .bikemodel {
+    #bikemodel {
         width: 100%;
         margin-left: 0vw;
 
@@ -472,13 +466,28 @@ table {
     }
   
 
-    .carousel-wrapper table {
-        width: 80%;
-        margin-bottom: 10vw;
+    /*MTB GUIDE*/
+    /*INTRO*/
+    .intro-pages .gradient-black {
+        top: 39.5vw;
     }
 
+    #intro-mtbguide .transparent-box {
+        width: 65%;
+        top: 35vw;
+    }
+    
 
-    /*MTB GUIDE*/
+    /*VÆRD AT VIDE*/
+
+    .to-kolonner-box h1 {
+        transform: rotate(0deg);
+        position: relative;
+        text-align: center;
+        top: 0;
+        right: 0;
+        margin-bottom: 5vw;
+    }
 
     .to-kolonner-indhold {
         flex-wrap: wrap;
@@ -490,17 +499,54 @@ table {
 
     .to-kolonner-text {
         width: 100%;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
     }
  
-}
+     /* HUSKELISTE TIL MTB-TUREN*/
 
+    .liste h1 {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .liste-indhold {
+        width: 80%;
+        margin-bottom: 10vw;
+    }
+
+    #tabletest {
+        width: 80%;
+        margin: auto;
+        background-color: #EBF1EE;
+        padding-top: 25vw;
+        padding-bottom: 25vw;
+
+    }
+
+    #tabletest table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        margin-top: 10vw;
+
+      }
+      
+      td, th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+      }
+
+
+}
   /*LAPTOP*/ 
 
 @media screen and (min-width: 768px) {
-
-    .carousel-wrapper table {
+    .table-img {
         display: none;
     }
 
 }
-

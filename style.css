@@ -127,12 +127,6 @@ nav a {
     left: 2vw;
 }
 
-.gradient-black {
-    height: 22vw;
-    background: linear-gradient(transparent, black);
-    position: relative;
-    top: 23vw;
-}
 
 
 /*CYKEL SEKTION _ FORSIDE*/
@@ -183,19 +177,6 @@ nav a {
     margin-top: 10vw;
 }
 
-.gradient-img .gradient-black {
-    top: 0;
-    transform: rotate(180deg);
-    height: 10vw;
-}
-
-.gradient-grey {
-    height: 10vw;
-    background: linear-gradient(transparent, #2F2E2E);
-    position: relative;
-    top: 10vw;
-    
-}
 
 
 /* INFOBOX - HVORFOR MTB?*/
@@ -347,6 +328,11 @@ footer li, footer h3, footer a {
     h3 {
         font-size: 3.2vw;
     }
+
+    h4 {
+        font-size: 4vw;
+    }
+
     /*HEADER MOBIL*/
 
     header {
@@ -367,22 +353,22 @@ footer li, footer h3, footer a {
         margin-left: 0;
     }
 
+    .laptop-img {
+        display: none;
+    }
     /*INTROBILLEDE FORSIDE MOBIL*/
 
     #intro-forside {
      
        height: 110vw;
-       background-position: left;
+       background-image: url(images/mtb_skoven_groencykel_mobil.jpg);
+       background-position: left ;
     }
 
     .transparent-box {
         width: 60%;
         top: 35vw;
         left: 5vw;
-    }
-
-    .gradient-black {
-        top: 30vw;
     }
 
 
@@ -406,17 +392,14 @@ footer li, footer h3, footer a {
 
     .knap h5 {
         border: 2px solid #94A61E;
-        font-size: 2vw ;
-        width: 50%;
+        font-size: 3vw ;
+        width: 65%;
     }
 
         
     #jumping-mtb { /*Billede med 'hoppende' MTB*/
         height: 40vw;
-    }
-
-    .gradient-grey {
-        top: 20vw;
+        background-image: url(images/jumping-mtb-mobil.jpg);
     }
 
 
@@ -503,6 +486,9 @@ footer li, footer h3, footer a {
 
 @media screen and (min-width: 768px){ 
 
+    .mobil-img {
+        display: none;
+    }
 
     
 }
