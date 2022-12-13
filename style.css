@@ -1,12 +1,4 @@
-/*colors: 
-Sort #000000 
-Mørkegrå: #2F2E2E
-Lysegrå: #EBF1EE
-Mørkegrøn: #94A61E
-Lysegrøn: #DEFF08
-*/ 
-/*PÅ DETTE STYLESHEET FINDES CSS (HERUNDER MEDIAQUERIES) 
-TIL ALT GENERELT OG FORSIDEN*/
+/*PÅ DETTE STYLESHEET FINDES ALT GENERELT OG FORSIDEN, SAMT MEDIAQUERIES HERTIL*/
 
 /* GENERELT*/
 
@@ -21,12 +13,12 @@ body {
     width: 100%;
     background-color: black;
     overflow-x: hidden;
-
 }
 
 a { 
     text-decoration: none;
 }
+
 img {
     width: 100%;
 }
@@ -35,8 +27,6 @@ ul {
     list-style: none; 
 }
   
-
-
 h1 {
     font-size: 5vw;
     text-transform: uppercase;
@@ -52,6 +42,7 @@ h2 {
     font-weight: 400;
     text-transform: uppercase;
 }
+
 h3 {
     color: #94A61E;
     font-size: 1.5vw;
@@ -60,10 +51,9 @@ h3 {
 
 h4 {
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-transform: uppercase;
 }
-
 
 h5 {
     border: 3px solid #94A61E;
@@ -325,9 +315,19 @@ header {
 #infobox {
    
     background-color: #2F2E2E;
-    padding-bottom: 10vw;
-    
+    padding-bottom: 10vw;    
 }
+
+#tandhjul {
+    animation: turning-gear 30s linear infinite;
+}
+
+@-webkit-keyframes turning-gear {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
+
 
 #infobox h1 {
     text-align: center;
@@ -344,6 +344,11 @@ header {
     font-size: 1.5vw;
     color: #EBF1EE;
     font-weight: 300;
+}
+
+#infobox ul li a {
+    color: #EBF1EE;
+    text-decoration: underline;
 }
 
 #infobox ul li::before {
@@ -366,6 +371,8 @@ header {
 #infobox h5 {
     width: 20%;
 }
+
+
 
 
 
@@ -454,6 +461,10 @@ footer li, footer a {
 }
 footer li {
     line-height: 2;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer a:hover {

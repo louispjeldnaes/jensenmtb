@@ -64,17 +64,43 @@
 .bikemodel {
     margin-left: 5vw;
     margin-top: -5vw;
+    margin-bottom: 2vw;
 }
+
+.bikemodel:active {
+    transform: scale(1.5);
+}
+
+#fire-dots {
+    position: absolute;
+    top: 35vw;
+    left: 28vw;
+}
+
+.greendot {
+    color: #94A61E;
+    font-size: 1.3vw;
+    padding: 0.15vw;
+}
+
+.greydot {
+    color: #2F2E2E;
+    font-size: 1.3vw;
+    padding: 0.15vw;
+}
+
 
 .closeup-images {
     display: flex;
     justify-content: space-around;
-
 }
 
 .closeup-images div {
     width: 30%;
+}
 
+.closeup-images div:active {
+    transform: scale(2);
 }
 
 .carousel-text {
@@ -87,10 +113,15 @@
 
 .carousel-text p {
     width: 45%;
+    font-size: 1.2vw;
 }
 
 .carousel-wrapper h5 {
     width: 25%;
+}
+
+.carousel-text li {
+    font-size: 1.2vw;
 }
 
 
@@ -452,11 +483,12 @@
     /*4 KORT MED MODELLER*/
 
     .carousel-wrapper {
-        height: 280vw;
+        height: 305vw;
+        width: 80%;
     }
 
     .carousel-wrapper h5 {
-        width: 80%;
+        width: 40%;
         margin-bottom: 10vw;
     }
     
@@ -474,6 +506,16 @@
     .bikemodel {
         width: 100%;
         margin-left: 0vw;
+    }
+
+    #fire-dots {
+        position: relative;
+        top: -5vw;
+        left: 30vw;
+    }
+
+    .greendot, .greydot {
+        font-size: 2.8vw;
     }
     
     .closeup-images {
@@ -495,6 +537,11 @@
         margin-bottom: 5vw;
         text-align: center;
         padding: 5vw;
+        font-size: 3vw;
+    }
+
+    .carousel-text li {
+        font-size: 3vw;
     }
 
 
