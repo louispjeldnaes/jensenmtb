@@ -29,9 +29,9 @@
 
 
 .carousel-wrapper{
-  height:105vw;
+  height:80vw;
   position:relative;
-  width:80vw;
+  width:60vw;
   margin: auto;
 }
 .carousel-item{
@@ -53,8 +53,9 @@
     -webkit-text-stroke-width: 2px;
     transform: rotate(-90deg);
     position: relative;
-    right: 36vw;
-    top: 38vw;
+    right: 27vw;
+    font-size: 4.3vw;
+    top: 28vw;
     text-align: right;
 
 
@@ -62,6 +63,7 @@
 
 .bikemodel {
     margin-left: 5vw;
+    margin-top: -5vw;
 }
 
 .closeup-images {
@@ -84,44 +86,43 @@
 }
 
 .carousel-text p {
-    width: 60%;
+    width: 45%;
 }
 
-.carousel-item .knap h5 {
-    width: 30%;
-   margin-bottom: 5vw; 
-   margin-top: 5vw;
+.carousel-wrapper h5 {
+    width: 25%;
 }
 
 
-/*GRØNNE KASSER DER MARKERER SPECIFIKATIONER I TABEL*/
+
+/*NEONGRØNNE KASSER DER MARKERER SPECIFIKATIONER I TABEL*/
 
 #floating-green-box1, #floating-green-box2, #floating-green-box3, #floating-green-box4 {
-    height: 53vw;
+    height: 40vw;
     background-color:rgba(222, 255, 8, 0.3);
     border: 5px solid #DEFF08;
     position: absolute;
-    top: 124.6vw;
-    left: 6.5vw;
-    width: 21vw;
+    top: 100vw;
+    left: 5vw;
+    width: 15.8vw;
 }
 
 #floating-green-box2 {
     
-    left: 27.3vw;
-    width: 16.7vw;
+    left: 20.5vw;
+    width: 12.5vw;
 }
 
 #floating-green-box3 {
    
-    left: 43.8vw;
-    width: 17.1vw;
+    left: 32.8vw;
+    width: 12.9vw;
 }
 
 #floating-green-box4 {
    
-    left: 60.5vw;
-    width: 19.5vw;
+    left: 45.5vw;
+    width: 14.5vw;
 }
 
 
@@ -129,7 +130,7 @@
 /*PILE - UDSEENDE*/
 
 .arrow{
-  border: solid #DEFF08;
+    border: solid #DEFF08;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 12px;
@@ -138,32 +139,32 @@
 /*Pile - placering*/
 
 .arrow-prev{
-  left:-50px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(135deg);
+    left:-50px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
 }
  
 .arrow-next{
     right:-50px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%) rotate(-45deg);
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
   }
 
   /*Pile ved specifikation-sektionen*/
 .arrowprev-specs {
     left:-50px;
-  position:absolute;
-  top:147%;
-  transform:translateY(-50%) rotate(135deg);
+    position:absolute;
+    top:150%;
+    transform:translateY(-50%) rotate(135deg);
 }
 
 .arrownext-specs {
     right:-50px;
-  position:absolute;
-  top:147%;
-  transform:translateY(-50%) rotate(-45deg);
+    position:absolute;
+    top:150%;
+    transform:translateY(-50%) rotate(-45deg);
 }
 
 
@@ -211,7 +212,7 @@
 }
 
 #tabel {
-    width: 80vw;
+    width: 60vw;
     margin: auto;
 }
 
@@ -220,16 +221,18 @@
     margin: auto;
 }
 
-  #specifikationer p {
+#specifikationer p {
     color: #EBF1EE;
     width: 50%;
     text-align: center;
     margin: auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
-  }
+}
 
-
+#specifikationer h5 {
+    width: 20%;
+}
 
 
 
@@ -246,7 +249,7 @@
 .to-kolonner-box {
     background-color: #EBF1EE;
     border: 5px solid #DEFF08;
-    width: 80%;
+    width: 60%;
     margin: auto;
     padding-bottom: 7vw;
 }
@@ -256,8 +259,8 @@
     -webkit-text-stroke-width: 2px;
     transform: rotate(-90deg);
     position: relative;
-    right: 36vw;
-    top: 38vw;
+    right: 33vw;
+    top: 27vw;
     text-align: right;
 }
 
@@ -277,6 +280,14 @@
     width: 60%;
 }
 
+.to-kolonner-text p {
+    font-size: 1vw;
+}
+
+.to-kolonner-box h5 {
+    width: 30%;
+}
+
 
 /*HUSKELISTE-SEKTION*/
 
@@ -285,32 +296,39 @@
     margin-bottom: 10vw;
 }
 
+.liste h5 {
+    width: 20%;
+}
 .liste h1 {
     text-align: center;
+    margin-bottom: 2vw;
 }
 
 .liste-indhold {
     display: flex;
-    width: 50%;
+    width: 45%;
     margin: auto;
     justify-content: center;
-    margin-top: 2vw;
+    margin-top: 1vw;
 
 }
 
 .liste-indhold div {
-    width: 20%;
+    width: 18%;
 }
 
 .liste-indhold p {
     width: 80%;
     color: #EBF1EE;
+    font-size: 1.1vw;
+    padding-top: 1.2vw;
     
 }
 
 #bike-closeup-img {
     background-image: url(images/bike-closeup.jpg);
 }
+
 
 
 
@@ -324,8 +342,8 @@
 #appsite-info {
     background-color: #EBF1EE;
     border: 5px solid #DEFF08;
-    width: 65%;
-    margin: 0vw 30% 10vw 10%;
+    width: 60%;
+    margin: 0vw 30% 10vw 15%;
 }
 
 #appsite-info h1 {
@@ -333,18 +351,19 @@
     -webkit-text-stroke-width: 2px;
     transform: rotate(-90deg);
     position: relative;
-    right: 28vw;
-    top: 30vw;
+    right: 26vw;
+    top: 28vw;
+    font-size: 4.8vw;
     text-align: right;
 }
 
 #appsite-info h3 {
-    margin-top: 2vw;
-    margin-left: 2vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
 } 
 
 #appsite-info h2 {
-    margin-left: 2vw;
+    margin-left: 1vw;
 }
 
 
@@ -352,7 +371,7 @@
     width: 70%;
     margin: auto;
     display: flex;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 #appsite-text {
@@ -365,24 +384,23 @@
 }
 
 #appsite-info ul {
-    margin-top: 5vw;
+    margin-top: 2vw;
     margin-bottom: 5vw;
 }
 
 
 #appsite-info ul li {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: black;
     font-weight: 400;
-    width:75%;
+    width:80%;
     margin: auto;
-
 }
 
 #appsite-info ul li::before {
     content: "\2022";  
     color: #94A61E;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: bolder; 
     display: inline-block; 
     width: 1em; 
@@ -434,16 +452,24 @@
     /*4 KORT MED MODELLER*/
 
     .carousel-wrapper {
-        height: 345vw;
+        height: 280vw;
     }
+
+    .carousel-wrapper h5 {
+        width: 80%;
+        margin-bottom: 10vw;
+    }
+    
 
     .carousel-item h1 {
         -webkit-text-stroke-width: 1px;
         transform: rotate(0deg);
         right: 0vw;
         top: 0vw;
+        font-size: 7vw;
         text-align: center;
         width: 100%;
+        margin-bottom: 2vw;
     }
     .bikemodel {
         width: 100%;
@@ -471,11 +497,7 @@
         padding: 5vw;
     }
 
-    .carousel-item .knap h5 {
-        width: 60%;
-       margin-bottom: 10vw; 
-       margin-top: 10vw;
-    }
+
 
     .arrow-prev {
         left: -30px;
@@ -508,6 +530,10 @@
     #tabel {
         display: none;
     }
+
+    #specifikationer h5 {
+        width: 40%;
+    }
   
 
     /*MTB GUIDE*/
@@ -525,6 +551,14 @@
 
     /*VÆRD AT VIDE*/
 
+    .to-kolonner-box {
+        width: 80%;
+    }
+
+
+    .to-kolonner-box h5 {
+        width: 50%;
+    }
     .to-kolonner-box h1 {
         transform: rotate(0deg);
         position: relative;
@@ -532,6 +566,7 @@
         top: 0;
         right: 0;
         margin-bottom: 5vw;
+        margin-top: 5vw;
     }
 
     .to-kolonner-indhold {
@@ -547,6 +582,14 @@
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
+
+    .to-kolonner-text p {
+        font-size: 3vw;
+    }
+
+    #noshow-img {
+        display: none;
+    }
  
      /* HUSKELISTE TIL MTB-TUREN*/
 
@@ -555,10 +598,17 @@
         text-align: center;
         margin: auto;
     }
+    .liste h5 {
+        width: 40%;
+    }
 
     .liste-indhold {
         width: 80%;
         margin-bottom: 10vw;
+    }
+
+    .liste-indhold p {
+        font-size: 3vw;
     }
 
 
@@ -584,8 +634,11 @@
             text-align: center;
             top: 0;
             right: 0;
+            font-size: 8vw;
+            width: 80%;
+            margin: auto;
             margin-bottom: 5vw;
-            margin-top: 10vw;
+            margin-top: 5vw;
         }
 
         #appsite-info ul li::before {
@@ -615,6 +668,8 @@
     .table-img {
         display: none;
     }
+
+
 
 
 }
