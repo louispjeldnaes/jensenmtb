@@ -32,7 +32,7 @@ https://speckyboy.com/open-source-carousel-sliders-css/ */
 .carousel-container{
   height:80vw;
   position:relative;
-  width:60vw;
+  width:60%;
   margin: auto;
 }
 
@@ -458,6 +458,7 @@ https://speckyboy.com/open-source-carousel-sliders-css/ */
 
     /* INTRO TIL VORES MODELLER*/
 
+
     .intro-pages {
         height: 100vw;
         margin-bottom: 10vw;
@@ -498,8 +499,8 @@ https://speckyboy.com/open-source-carousel-sliders-css/ */
     }
 
     .fire-dots {
-        position: relative;
-        top: -5vw;
+        position: absolute;
+        top: 51vw;
         left: 30vw;
     }
 
