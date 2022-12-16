@@ -23,31 +23,32 @@
 
 
 
-/*4 KORT OVER MODELLER - CAROUSEL*/
+/*4 KORT OVER MODELLER - som karrusel*/
 
-/*Inspiration til udførelse af denne løsning på https://speckyboy.com/open-source-carousel-sliders-css/ */
+/*Inspiration til udførelse af denne løsning på 
+https://speckyboy.com/open-source-carousel-sliders-css/ */
 
 
-.carousel-wrapper{
+.carousel-container{
   height:80vw;
   position:relative;
   width:60vw;
   margin: auto;
 }
+
+/* INDHOLD TIL 4 KORT MED FORSKELLIGE MODELLER */
 .carousel-item{
   position:absolute;
   top:0;
   bottom:0;
   left:0;
   right:0;
-  opacity:0;
-  transition: all 0.5s ease-in-out;
+  opacity:0; /*Kan ikke ses (medmindre den får at vide at den skal ændre sig med en aktion som kommer senere)*/
+  transition: all 0.5s ease-in-out; /*Skaber en overgang imellem kortene*/
   background-color: #EBF1EE;
   border: 5px solid #DEFF08;
 }
 
-
-/* INDHOLD TIL 4 KORT MED FORSKELLIGE MODELLER */
 .carousel-item h1 {
     -webkit-text-stroke-color: #94A61E;
     -webkit-text-stroke-width: 2px;
@@ -57,10 +58,9 @@
     font-size: 4.3vw;
     top: 28vw;
     text-align: right;
-
-
 }
 
+/*billede af model*/
 .bikemodel {
     margin-left: 5vw;
     margin-top: -5vw;
@@ -68,10 +68,11 @@
 }
 
 .bikemodel:active {
-    transform: scale(1.5);
+    transform: scale(1.5); /*forstørrer billede, når man klikker på den (og holder nede)*/
 }
 
-#fire-dots {
+/*4 prikker - viser ved hvilken model man er*/
+.fire-dots {
     position: absolute;
     top: 35vw;
     left: 28vw;
@@ -89,7 +90,7 @@
     padding: 0.15vw;
 }
 
-
+/*3 billeder med deltaljer af cykel*/
 .closeup-images {
     display: flex;
     justify-content: space-around;
@@ -99,10 +100,11 @@
     width: 30%;
 }
 
-.closeup-images div:active {
+.closeup-images div:active { /*forstørrer billeder, når man klikker (og holder nede)*/
     transform: scale(2);
 }
 
+/*Tekst om modeller*/
 .carousel-text {
     display: flex;
     text-align: left;
@@ -116,7 +118,7 @@
     font-size: 1.2vw;
 }
 
-.carousel-wrapper h5 {
+.carousel-container h5 {
     width: 25%;
 }
 
@@ -126,7 +128,7 @@
 
 
 
-/*NEONGRØNNE KASSER DER MARKERER SPECIFIKATIONER I TABEL*/
+/*Neongrønne kasser der markerer specifikationerne på den valgte model - kun på laptop*/
 
 #floating-green-box1, #floating-green-box2, #floating-green-box3, #floating-green-box4 {
     height: 40vw;
@@ -139,26 +141,23 @@
 }
 
 #floating-green-box2 {
-    
     left: 20.5vw;
     width: 12.5vw;
 }
 
 #floating-green-box3 {
-   
     left: 32.8vw;
     width: 12.9vw;
 }
 
 #floating-green-box4 {
-   
     left: 45.5vw;
     width: 14.5vw;
 }
 
 
 
-/*PILE - UDSEENDE*/
+/*Pile - udseende*/
 
 .arrow{
     border: solid #DEFF08;
@@ -184,6 +183,7 @@
   }
 
   /*Pile ved specifikation-sektionen*/
+
 .arrowprev-specs {
     left:-50px;
     position:absolute;
@@ -225,10 +225,6 @@
   }
 
 
-
-
-
-
 /*SPECIFIKATIONER*/
 
 #specifikationer {
@@ -252,17 +248,9 @@
     margin: auto;
 }
 
-#specifikationer p {
-    color: #EBF1EE;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-}
-
 #specifikationer h5 {
     width: 20%;
+    margin-top: 5vw;
 }
 
 
@@ -341,7 +329,6 @@
     margin: auto;
     justify-content: center;
     margin-top: 1vw;
-
 }
 
 .liste-indhold div {
@@ -356,10 +343,13 @@
     
 }
 
+.liste a {
+    color: #EBF1EE;
+    text-decoration: underline;
+}
 #bike-closeup-img {
     background-image: url(images/bike-closeup.jpg);
 }
-
 
 
 
@@ -419,7 +409,6 @@
     margin-bottom: 5vw;
 }
 
-
 #appsite-info ul li {
     font-size: 1.2vw;
     color: black;
@@ -428,7 +417,8 @@
     margin: auto;
 }
 
-#appsite-info ul li::before {
+/*ændrer style på bullet-point*/
+#appsite-info ul li::before { 
     content: "\2022";  
     color: #94A61E;
     font-size: 2vw;
@@ -445,6 +435,7 @@
     width: 100%;
     margin: auto;
 }
+
 #get-app a {
     width: 30%;
 }
@@ -463,7 +454,6 @@
 
 @media screen and (max-width: 768px){ 
 
-
     /*VORES MODELLER*/
 
     /* INTRO TIL VORES MODELLER*/
@@ -474,7 +464,6 @@
         background-image: url(images/bike-on-rock-mobil.jpg);
     }
 
-
     .intro-pages .transparent-box {
         top: 27vw;
         width: 85%;
@@ -482,17 +471,16 @@
 
     /*4 KORT MED MODELLER*/
 
-    .carousel-wrapper {
+    .carousel-container {
         height: 305vw;
         width: 80%;
     }
 
-    .carousel-wrapper h5 {
+    .carousel-container h5 {
         width: 40%;
         margin-bottom: 10vw;
     }
     
-
     .carousel-item h1 {
         -webkit-text-stroke-width: 1px;
         transform: rotate(0deg);
@@ -503,12 +491,13 @@
         width: 100%;
         margin-bottom: 2vw;
     }
+
     .bikemodel {
         width: 100%;
         margin-left: 0vw;
     }
 
-    #fire-dots {
+    .fire-dots {
         position: relative;
         top: -5vw;
         left: 30vw;
@@ -544,8 +533,6 @@
         font-size: 3vw;
     }
 
-
-
     .arrow-prev {
         left: -30px;
         top: 30%;
@@ -568,7 +555,7 @@
         display: none;
     }
 
-    /*SPECIFIKATIONER -på mobil er de inde i den lysegrå kasse*/
+    /*SPECIFIKATIONER - på mobil er de inde i den lysegrå kasse*/
 
     #specifikationer h1 {
         display: none;
@@ -594,7 +581,6 @@
         width: 65%;
         top: 35vw;
     }
-    
 
     /*VÆRD AT VIDE*/
 
@@ -602,10 +588,10 @@
         width: 80%;
     }
 
-
     .to-kolonner-box h5 {
         width: 50%;
     }
+
     .to-kolonner-box h1 {
         transform: rotate(0deg);
         position: relative;
@@ -645,6 +631,7 @@
         text-align: center;
         margin: auto;
     }
+
     .liste h5 {
         width: 40%;
     }
@@ -658,56 +645,52 @@
         font-size: 3vw;
     }
 
-
     #bike-closeup-img {
         background-image: url(images/bike-closeup-mobil.jpg)
     }
 
     /*APP-SITE*/
 
-        #appsite-info {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 10vw;
-        }
+    #appsite-info {
+         width: 80%;
+        margin: auto;
+        margin-bottom: 10vw;
+    }
 
-        #intro-voresapp .transparent-box {
-            width: 65%;
-            top: 35vw;
-        }
-        #appsite-info h1 {
-            transform: rotate(0deg);
-            position: relative;
-            text-align: center;
-            top: 0;
-            right: 0;
-            font-size: 8vw;
-            width: 80%;
-            margin: auto;
-            margin-bottom: 5vw;
-            margin-top: 5vw;
-        }
+    #intro-voresapp .transparent-box {
+        width: 65%;
+        top: 35vw;
+    }
 
-        #appsite-info ul li::before {
-            font-size: 5vw;
-        }
+    #appsite-info h1 {
+        transform: rotate(0deg);
+        position: relative;
+        text-align: center;
+        top: 0;
+        right: 0;
+        font-size: 8vw;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
 
-        #appsite-info ul li {
-            font-size: 3vw;
-        }
+    #appsite-info ul li::before {
+        font-size: 5vw;
+    }
 
-    
-        #get-app a {
-            width: 80%;
-        }
+    #appsite-info ul li {
+        font-size: 3vw;
+    }
 
-        #appstore {
-            margin-top: 1vw;
-        }
+    #get-app a {
+        width: 80%;
+    }
 
-
+    #appstore {
+        margin-top: 1vw;
+    }
 }
-
 
   /*LAPTOP*/ 
 
@@ -715,8 +698,4 @@
     .table-img {
         display: none;
     }
-
-
-
-
 }

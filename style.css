@@ -1,6 +1,6 @@
 /*PÅ DETTE STYLESHEET FINDES ALT GENERELT OG FORSIDEN, SAMT MEDIAQUERIES HERTIL*/
 
-/* GENERELT*/
+/* -------------  GENERELT -----------------*/
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,7 +73,6 @@ h5:hover {
 }
 
 
-
 /*HEADER*/
 
 header {
@@ -87,13 +86,16 @@ header {
     left: 0;
     z-index: 100;
     box-shadow: 5px 5px 5px black;
-
 }
 
 #logo {
     width: 27vw ;
     margin-left: 2vw;
     display: flex;
+}
+#logotext {
+    width: 19vw;
+    margin-top: 1vw;
 }
 
 #logoimg {
@@ -102,12 +104,7 @@ header {
     animation-duration: 2.5s;
 }
 
-#logotext {
-    width: 19vw;
-    margin-top: 1vw;
-}
-
-
+/*Flytter den ene del af logoet, så det ser ud som om den 'cykler'*/
 @keyframes moving-logo {
     0% {transform: translateX(0);}
     20% {transform: translateX(-100vw);}
@@ -115,7 +112,6 @@ header {
     90% {transform: translateX(-10vw);}
     100% {transform: translateX(0);}
 }
-
 
 nav {
     display: flex;
@@ -139,16 +135,17 @@ nav a:hover {
 header {
     animation-name: header;
     animation-duration: 0.8s;
-
 }
 
+/*Får headeren til at glide ind fra oven*/
 @keyframes header {
     from {top: -20vw;}
     to {top: 0vw;}
 }
 
 
-/* FORSIDE*/
+
+/* -------------- FORSIDE --------------------*/
 
 #intro-forside {
     background-image:  url(images/mtb_skoven_groencykel.jpg);
@@ -157,7 +154,6 @@ header {
     background-repeat: no-repeat;
     height: 57vw;
 }
-
 
 .transparent-box {
     background-color: black;
@@ -171,16 +167,14 @@ header {
     animation-duration: 1.5s;
 }
 
+/*Får kassen til at glide ind fra siden*/
 @keyframes transparentbox {
     from {left: -50vw;}
     to {left: 2vw;}
 }
 
 
-
-
-
-/*CYKEL SEKTION _ FORSIDE*/
+/*MTB - SEKTION*/
 
 #MTB-intro {
     background-color: #EBF1EE;
@@ -200,6 +194,7 @@ header {
     top: 35vw;
 }
 
+/*Billede af cykel*/
 #bike-pushed-right {
     position: relative;
     top: -5vw;
@@ -208,9 +203,7 @@ header {
 }
 
 
-
 /*Streger med tekst på laptopversion*/
-
 #line1:hover, #line2:hover, #line3:hover, #line4:hover {
     transform: scale(1.05)
 }
@@ -219,7 +212,6 @@ header {
     color: #94A61E;
     width: 25%;
     font-size: 1.1vw;
-
 }
 
 #line1 img {
@@ -236,8 +228,6 @@ header {
     left: 8vw;
 }
 
-
-
 #line2 img {
     width: 10vw;
     position: absolute;
@@ -252,9 +242,6 @@ header {
     left: -6vw;
 }
 
-
-
-
 #line3 img {
     width: 9vw;
     position: absolute;
@@ -268,10 +255,6 @@ header {
     top: 10vw;
     left: 68vw;
 }
-
-
-
-
 
 #line4 img {
     width: 10vw;
@@ -288,8 +271,7 @@ header {
     left: 60vw;
 }
 
-
-
+/*Tekst til billede*/
 #mtb-intro-text {
     width: 80%;
     margin: auto;
@@ -297,9 +279,7 @@ header {
     margin-top: -4vw;
 }
 
-
-
-
+/*divider-billede*/
 .gradient-img {
     height: 30vw;
     background-image: url(images/jumping-mtb.jpg);
@@ -309,36 +289,23 @@ header {
 }
 
 
-
 /* INFOBOX - HVORFOR MTB?*/
 
 #infobox {
-   
     background-color: #2F2E2E;
     padding-bottom: 10vw;    
 }
-
-#tandhjul {
-    animation: turning-gear 30s linear infinite;
-}
-
-@-webkit-keyframes turning-gear {
-    from {transform: rotate(360deg);}
-    to {transform: rotate(0deg);}
-}
-
-
 
 #infobox h1 {
     text-align: center;
     padding-top: 5vw;
     margin-bottom: 5vw;
 }
+
 #to-kolonner {
     display: flex;
     padding-left: 20vw;
 }
-
 
 #infobox ul li {
     font-size: 1.5vw;
@@ -366,18 +333,18 @@ header {
     width: 55%;
     position: relative;
     left: 16vw;
+    animation: turning-gear 30s linear infinite;
+}
+
+/*Få tandhjulet til at dreje rundt*/ 
+@keyframes turning-gear {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }
 
 #infobox h5 {
     width: 20%;
 }
-
-
-
-
-
-
-
 
 /* SEKTION OM APP*/
 
@@ -394,7 +361,6 @@ header {
     position: relative;
     top: 50vw;
     width: 20%;
-
 }
 
 .lightgrey-container {
@@ -434,7 +400,6 @@ header {
 
 /*FOOTER*/
 
-
 footer {
     background-color: #2F2E2E;
     display: flex;
@@ -442,8 +407,8 @@ footer {
     padding: 8vw ;
     padding-left: 14vw;
     width: 100%;
-
 }
+
 footer div {
     width: 25%;
 }
@@ -459,6 +424,7 @@ footer li, footer a {
     color: #707070;
     font-size: 1.3vw;
 }
+
 footer li {
     line-height: 2;
 }
@@ -471,9 +437,7 @@ footer a:hover {
     color: #94A61E;
 }
 
-
-
-/*MEDIA QUERIES*/
+/*-----------MEDIA QUERIES------------*/
 
 /*MOBIL*/ 
 
@@ -530,7 +494,8 @@ footer a:hover {
     .laptop-img {
         display: none;
     }
-    /*INTROBILLEDE FORSIDE MOBIL*/
+
+    /*INTRO - FORSIDE*/
 
     #intro-forside {
      
@@ -545,8 +510,7 @@ footer a:hover {
         left: 2vw;
     }
 
-
-    /*CYKEL-SEKTION - FORSIDE*/
+    /*MTB-SEKTION - FORSIDE*/
 
     #MTB-intro {
         left: 6vw;
@@ -565,9 +529,8 @@ footer a:hover {
         top: 63vw;
     }
 
-
-        
-    #jumping-mtb { /*Billede med 'hoppende' MTB*/
+    /*Divider billede*/
+    #jumping-mtb { 
         height: 40vw;
         background-image: url(images/jumping-mtb-mobil.jpg);
     }
@@ -585,13 +548,11 @@ footer a:hover {
 
     #to-kolonner {
         padding-left: 15vw;
+        padding-right: 15vw;
     }
 
-
     #tandhjul {
-        width: 75%;
-        position: relative;
-        top: 75vw;
+        display: none;
     }
 
     #infobox h5 {
@@ -603,7 +564,6 @@ footer a:hover {
 
     #app-section {
         display: block;
-    
     }
 
     #app-section h1 {
@@ -638,6 +598,7 @@ footer a:hover {
     }
 
     /*FOOTER*/
+
     footer {
         flex-wrap: wrap;
         padding: 5vw 0vw 20vw 14vw;
@@ -651,7 +612,6 @@ footer a:hover {
     footer li, footer h3, footer a {
         font-size: 2.5vw;
     }
-
 }
 
 
