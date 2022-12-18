@@ -136,22 +136,22 @@ https://speckyboy.com/open-source-carousel-sliders-css/ */
     border: 5px solid #DEFF08;
     position: absolute;
     top: 100vw;
-    left: 5vw;
+    left: 4.7vw;
     width: 15.8vw;
 }
 
 #floating-green-box2 {
-    left: 20.5vw;
+    left: 20.1vw;
     width: 12.5vw;
 }
 
 #floating-green-box3 {
-    left: 32.8vw;
+    left: 32.4vw;
     width: 12.9vw;
 }
 
 #floating-green-box4 {
-    left: 45.5vw;
+    left: 45.1vw;
     width: 14.5vw;
 }
 
@@ -343,7 +343,7 @@ https://speckyboy.com/open-source-carousel-sliders-css/ */
     
 }
 
-.liste a {
+.liste div p a {
     color: #EBF1EE;
     text-decoration: underline;
 }
